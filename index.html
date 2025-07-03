@@ -9,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
     <!-- CSS -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 
 <body>
@@ -17,7 +19,7 @@
         <img src="img/bag.png" alt="icon kantung uang">
         <h1>Budgetku.</h1>
     </header>
-    <main class="container budgets">
+    <main class="container budgets hidden">
         <div class="budget__card">
             <h2 class="budget__name">Makan & Minum</h2>
             <p class="budget__amount">Rp 100.000</p>
@@ -29,6 +31,69 @@
             <p class="budget__total">Total Rp 500.000</p>
         </div>
         <button class="add__budget__btn">+</button>
+    </main>
+    <main id="budget_details" class="container">
+        <button class="back__home">
+            <i class="ph ph-caret-left icon__back"></i>
+            Halaman Utama</button>
+        <div class="budget__card">
+            <div class="">
+                <h2 class="budget__name">Makan & Minum</h2>
+                <p class="budget__amount">Rp 100.000</p>
+                <p class="budget__total">Total Rp 500.000</p>
+            </div>
+            <div class="icon">
+                <i class="ph ph-pencil-line"></i>
+            </div>
+        </div>
+        <button class="add__spent__btn"><span>+</span> Tambah Pengeluaran</button>
+        <div class="sort__spent">
+            <i class="ph ph-arrows-down-up"></i>
+            <select>
+                <option>Tanggal Terbaru</option>
+                <option>Nama</option>
+                <option>Terkecil</option>
+                <option>Terbesar</option>
+            </select>
+        </div>
+        <div class="spent">
+            <div class="spent__item">
+                <div class="spent__item__desc">
+                    <h4>Bakso</h4>
+                    <p>2025-11-16</p>
+                </div>
+                <div class="spent__item__price">
+                    <p>Rp 10.000</p>
+                </div>
+            </div>
+            <div class="spent__item">
+                <div class="spent__item__desc">
+                    <h4>Bakso</h4>
+                    <p>2025-11-16</p>
+                </div>
+                <div class="spent__item__price">
+                    <p>Rp 10.000</p>
+                </div>
+            </div>
+            <div class="spent__item">
+                <div class="spent__item__desc">
+                    <h4>Bakso</h4>
+                    <p>2025-11-16</p>
+                </div>
+                <div class="spent__item__price">
+                    <p>Rp 10.000</p>
+                </div>
+            </div>
+            <div class="spent__item">
+                <div class="spent__item__desc">
+                    <h4>Bakso</h4>
+                    <p>2025-11-16</p>
+                </div>
+                <div class="spent__item__price">
+                    <p>Rp 10.000</p>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
