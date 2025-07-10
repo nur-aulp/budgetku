@@ -221,6 +221,17 @@ header h1{
     max-width: 40rem;
     padding: 1rem;
     border-radius: var(--card-radius);
+    animation : slideup 0.5s ease-in-out;
+}
+
+@keyframes slideup {
+    from {
+        opacity: 0;
+        transform: translateY(2rem);
+    } to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .modal__card__heading{
@@ -234,6 +245,7 @@ header h1{
 .modal__card__heading i{
     font-size: 1.35rem;
     color: #f24949;
+    cursor: pointer;
 }
 
 .modal form label{
